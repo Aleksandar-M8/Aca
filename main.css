@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+        
+    
+body {
+    font-family: "Rubik Dirt", sans-serif ,system-ui;
+    margin: 0;
+    padding: 0;   
+} 
+
+.container {
+    width: 100%;           
+    max-width: 1400px;     
+    margin: 0 auto;        
+    padding: 0px;         
+    box-sizing: border-box; 
+}
+
+
+header {
+    
+    background-color: rgb(247, 237, 237);
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    /*border: 1px solid rgb(241, 88, 60);*/
+    border-radius: 50%;
+    padding: 4px;
+    margin-left: 70px;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px orange;
+}
+
+.main-navigation {    
+    align-content: center;
+    margin-right: 140px;
+}
+
+.main-navigation a {
+    color: orange;
+    text-decoration: none;
+    font-size: 26px;
+}
+
+
+.main-navigation ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;  
+    padding: 0;
+    
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus-visible {
+    color: orangered;
+}
+
+.picture {
+    background-image: url(img/pets-background.jpg);
+    background-size: cover;
+    background-position: 30% 46%;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 1400px;
+    height: 528px;
+    padding: 10px;
+    margin: 0px;
+    position: relative;
+}
