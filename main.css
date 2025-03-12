@@ -20,20 +20,24 @@ body {
 
 
 header {
-    
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 3px 80px rgba(0, 0, 0, 0.3);
     background-color: rgb(247, 237, 237);
     display: flex;
     justify-content: space-between;
+    border-radius: 8px;
 }
 
 header img {
     /*border: 1px solid rgb(241, 88, 60);*/
     border-radius: 50%;
     padding: 4px;
-    margin-left: 70px;
+    margin-left: 70px;  
 }
 
-img:hover {
+.nav-logo:hover {
     box-shadow: 0 0 2px 1px orange;
 }
 
@@ -61,6 +65,8 @@ img:hover {
 .main-navigation a:hover,
 .main-navigation a:focus-visible {
     color: orangered;
+    /*border: 1px solid orange;
+    border-radius: 12px;*/
 }
 
 .picture {
@@ -71,7 +77,52 @@ img:hover {
     width: 100%;
     max-width: 1400px;
     height: 528px;
-    padding: 10px;
+    padding: 10px 0 40px 0;
     margin: 0px;
     position: relative;
+    border-radius: 12px;
+}
+
+
+#category {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-top: 40px;
+}
+
+a {
+    text-decoration: none;  
+    color: inherit;  
+}
+
+.pets {
+    flex: 1;
+    text-align: center;
+    height: auto;
+    width: auto;
+    /*border: 1px dotted blueviolet;*/
+    margin: 20px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    object-fit: cover;
+   
+
+}
+
+.title {
+    font-family: "Delius", cursive;
+    font-weight: bold;
+    font-style: normal;
+    color: orange;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+
+.pets:hover {
+    box-shadow: 0 0 2px 1px orange;
+    border-radius: 15%;
 }
