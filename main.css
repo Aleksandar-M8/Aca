@@ -227,3 +227,19 @@ a {
     border-radius: 15%;
 }
 
+section {
+  display: block;
+  margin-top: 20px;
+  box-shadow: 0 0 2px 1px orange;
+}
+
+footer{
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  background-color: rgb(247, 237, 237);
+  width: 100%;
+  color: orange;
+  font-size: 18px;
+  box-shadow: inset 0px 8px 6px -6px #888;
+}
